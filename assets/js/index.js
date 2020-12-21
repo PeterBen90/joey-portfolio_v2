@@ -3,7 +3,7 @@ $("#overlayer").delay(1000).fadeOut("slow");
 
 document.addEventListener("DOMContentLoaded", function () {
 	var typed = new Typed(".type", {
-		strings: ["Data Scientist", "Personal Investor", "Problem Solver"],
+		strings: ["Data Scientist.", "Personal Investor.", "Problem Solver."],
 		stringsElement: null,
 		// typing speed
 		typeSpeed: 60,
