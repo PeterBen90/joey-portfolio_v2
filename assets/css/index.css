@@ -192,8 +192,8 @@ span.type::after {
 }
 
 .menu {
-	font-size: 2rem;
-	text-align: center;
+	font-size: 3.5rem;
+	text-align: left;
 	font-family: "Avenir Next" !important;
 }
 
@@ -227,6 +227,11 @@ span.type::after {
 	-o-transition: all 0.2s ease-in;
 	-webkit-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
+}
+
+.fas {
+	color: #fff;
+	margin-right: 10px;
 }
 
 @keyframes fadeInLeft {
@@ -294,6 +299,10 @@ span.type::after {
 		padding-left: 50px;
 		float: left;
 	}
+
+	.menu {
+		font-size: 3rem;
+	}
 }
 
 @media (max-width: 520px) {
@@ -314,5 +323,9 @@ span.type::after {
 
 	span {
 		font-size: 25px;
+	}
+
+	.menu {
+		font-size: 2.5rem;
 	}
 }
