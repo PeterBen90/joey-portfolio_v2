@@ -8,11 +8,11 @@ body {
 	font-family: "Avenir Next" !important;
 }
 
-/* canvas {
+canvas {
 	display: block;
 	width: 100%;
 	height: 100%;
-} */
+}
 
 /* ---- particles.js container ---- */
 #particles-js {
@@ -65,10 +65,26 @@ body {
 	font-weight: 700;
 }
 
-.fa-arrow-right {
+.fa-linkedin-in,
+.fa-github-alt,
+.fa-envelope {
 	font-size: 3rem;
 	margin-top: 30px;
+	color: #fff !important;
+}
+
+a:hover {
 	color: #fff;
+	text-shadow: 0px 0px 30px #fff;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.fa-github-alt,
+.fa-envelope {
+	margin-left: 20px;
 }
 
 span {
@@ -193,7 +209,7 @@ span.type::after {
 
 .menu {
 	font-size: 3.5rem;
-	text-align: left;
+	text-align: center;
 	font-family: "Avenir Next" !important;
 }
 
@@ -227,6 +243,71 @@ span.type::after {
 	-o-transition: all 0.2s ease-in;
 	-webkit-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
+}
+
+.menu a:hover span:first-child {
+	transform: translateY(100%);
+}
+
+.menu a:hover span:last-child,
+.menu[data-animation] a:hover span:last-child {
+	transform: none;
+}
+
+.menu[data-animation="to-top"] a span:last-child {
+	transform: translateY(100%);
+}
+
+.menu[data-animation="to-top"] a:hover span:first-child {
+	transform: translateY(-100%);
+}
+
+.menu[data-animation="to-right"] a span:last-child {
+	transform: translateX(-100%);
+}
+
+.menu[data-animation="to-right"] a:hover span:first-child {
+	transform: translateX(100%);
+}
+
+.menu[data-animation="to-left"] a span:last-child {
+	transform: translateX(100%);
+}
+
+.menu[data-animation="to-left"] a:hover span:first-child {
+	transform: translateX(-100%);
+}
+
+.menu a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	font-size: 30px;
+}
+
+.menu i {
+	font-size: 30px;
+}
+
+.menu a span {
+	transition: transform 0.2s ease-out;
+}
+
+.menu a span:first-child {
+	display: inline-block;
+	padding: 10px;
+}
+
+.menu a span:last-child {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(-100%);
 }
 
 .fas {
@@ -275,6 +356,11 @@ span.type::after {
 
 .overlay.visible li:nth-of-type(5) {
 	animation-delay: 0.8s;
+}
+
+#about-section {
+	height: 100%;
+	width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -353,5 +439,11 @@ span.type::after {
 		width: 40px;
 		height: 20px;
 		right: 1.5rem;
+	}
+
+	.fa-linkedin-in,
+	.fa-github-alt,
+	.fa-envelope {
+		font-size: 2rem;
 	}
 }
