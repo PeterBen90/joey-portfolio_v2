@@ -75,7 +75,7 @@ canvas {
 
 a:hover {
 	color: #fff;
-	text-shadow: 0px 0px 30px #fff;
+	text-shadow: 0px 0px 15px #fff;
 	-moz-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	-webkit-transition: all 0.2s ease-in;
@@ -192,6 +192,58 @@ span.type::after {
 	transform: rotate(-45deg);
 }
 
+/* Hamburger button styles. */
+.hamburger-button2 {
+	position: absolute;
+	transition: 0.3s ease-in-out;
+	width: 45px;
+	height: 34px;
+	display: block;
+	top: 2rem;
+	right: 2rem;
+	z-index: 100;
+}
+
+.hamburger-button2 span {
+	position: absolute;
+	height: 5px;
+	border-radius: 4px;
+	width: 100%;
+	background-color: #000;
+	top: 0;
+	transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.hamburger-button2 span:nth-child(1) {
+	top: 0px;
+}
+
+.hamburger-button2 span:nth-child(2),
+.hamburger-button2 span:nth-child(3) {
+	top: 13px;
+}
+
+.hamburger-button2 span:nth-child(4) {
+	top: 26px;
+}
+
+.hamburger-button2.active span {
+	background-color: #fff;
+}
+
+.hamburger-button2.active span:nth-child(1),
+.hamburger-button2.active span:nth-child(4) {
+	opacity: 0;
+}
+
+.hamburger-button2.active span:nth-child(2) {
+	transform: rotate(45deg);
+}
+
+.hamburger-button2.active span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
 .overlay {
 	position: fixed;
 	width: 100%;
@@ -238,7 +290,7 @@ span.type::after {
 .menu ul li a:hover {
 	opacity: 1;
 	color: #fff;
-	text-shadow: 0px 0px 30px #fff;
+	text-shadow: 0px 0px 15px #fff;
 	-moz-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	-webkit-transition: all 0.2s ease-in;
@@ -295,7 +347,7 @@ span.type::after {
 
 .menu a span:first-child {
 	display: inline-block;
-	padding: 10px;
+	padding: 15px;
 }
 
 .menu a span:last-child {
@@ -358,9 +410,21 @@ span.type::after {
 	animation-delay: 0.8s;
 }
 
-#about-section {
-	height: 100%;
-	width: 100%;
+/* About Section */
+
+.section-title {
+	font-family: "Avenir Next" !important;
+	margin-top: 100px;
+	font-weight: 700;
+	font-size: 4rem;
+}
+
+.section-title:after {
+	content: ""; /* This is necessary for the pseudo element to work. */
+	display: block; /* This will put the pseudo element on its own line. */
+	width: 15%; /* Change this to whatever width you want. */
+	padding-top: 20px; /* This creates some space between the element and the border. */
+	border-bottom: 10px solid black; /* This creates the border. Replace black with whatever color you want. */
 }
 
 @media (max-width: 1024px) {
@@ -445,5 +509,28 @@ span.type::after {
 	.fa-github-alt,
 	.fa-envelope {
 		font-size: 2rem;
+	}
+
+	.section-title:after {
+		width: 40%; /* Change this to whatever width you want. */
+		margin: 0 auto;
+	}
+
+	.section-title {
+		font-family: "Avenir Next" !important;
+		margin-top: 100px;
+		font-weight: 700;
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	.hamburger-button2 {
+		top: 1rem;
+		right: 1rem;
+	}
+
+	.hamburger-button {
+		top: 1rem;
+		right: 1rem;
 	}
 }
