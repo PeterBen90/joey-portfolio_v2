@@ -228,7 +228,7 @@ span.type::after {
 	color: #fff;
 	text-decoration: none;
 	transition: opacity 0.2s ease;
-	opacity: 0.75;
+	/* opacity: 0.75; */
 	-moz-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	-webkit-transition: all 0.2s ease-in;
