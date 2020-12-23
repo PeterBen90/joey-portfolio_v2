@@ -754,4 +754,8 @@ footer {
 	.tiles {
 		padding: 60px;
 	}
+
+	.text-btn {
+		font-size: 20px;
+	}
 }
