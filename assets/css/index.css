@@ -458,11 +458,9 @@ span.type::after {
 	color: #000;
 }
 
-.download {
-	font-size: 16px;
-}
-
-.more {
+.download,
+.more,
+.projects {
 	font-size: 16px;
 }
 
@@ -488,8 +486,29 @@ span.type::after {
 	transition: ease 0.5s;
 }
 
+.btn3 {
+	background: #000 !important;
+	color: #fff !important;
+	font-size: 20px !important;
+	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+	padding: 15px 40px;
+	position: relative;
+	top: 0;
+	transition: ease 0.5s;
+}
+
+.last {
+	margin-bottom: 150px;
+}
+
+.project-btn {
+	justify-content: center !important;
+	display: flex;
+}
+
 .btn1:hover,
-.btn2:hover {
+.btn2:hover,
+.btn3:hover {
 	text-decoration: none !important;
 	transition: ease 0.5s;
 	top: 3px;
@@ -498,7 +517,7 @@ span.type::after {
 
 .tools {
 	margin-top: 150px;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 }
 
 .tiles {
@@ -734,7 +753,8 @@ footer {
 		right: 1rem;
 	}
 
-	.btn1 {
+	.btn1,
+	.btn3 {
 		display: block;
 		text-align: center;
 		padding: 17px 40px;
@@ -757,5 +777,11 @@ footer {
 
 	.text-btn {
 		font-size: 20px;
+	}
+
+	.project-btn {
+		display: block !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
 	}
 }
