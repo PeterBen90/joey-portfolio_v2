@@ -537,6 +537,11 @@ span.type::after {
 	transition: ease 0.5s;
 }
 
+#projects-section,
+#contact-section {
+	margin-bottom: 500px;
+}
+
 @keyframes bounce {
 	0%,
 	20%,
