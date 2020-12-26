@@ -632,10 +632,42 @@ span.type::after {
 .panel h3 {
 	font-size: 24px;
 	position: absolute;
-	bottom: 20px;
+	bottom: 160px;
 	left: 20px;
 	margin: 0;
 	opacity: 0;
+}
+
+.panel p {
+	font-size: 18px;
+	position: absolute;
+	bottom: 100px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+}
+
+.panel a {
+	font-size: 18px;
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+	background: #fff !important;
+	color: #000 !important;
+	padding: 14px 22px;
+	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+	transition: ease 0.5s;
+}
+
+.panel a:hover {
+	text-decoration: none !important;
+}
+
+.panel a i {
+	color: #000;
+	margin-left: 10px;
 }
 
 .panel.active {
@@ -644,7 +676,17 @@ span.type::after {
 
 .panel.active h3 {
 	opacity: 1;
-	transition: opacity 0.3s ease-in 0.4s;
+	transition: opacity 0.5s ease-in 0.4s;
+}
+
+.panel.active p {
+	opacity: 1;
+	transition: opacity 0.5s ease-in 0.4s;
+}
+
+.panel.active a {
+	opacity: 1;
+	transition: opacity 0.5s ease-in 0.4s;
 }
 
 @keyframes bounce {
@@ -776,6 +818,18 @@ footer {
 	.body-text {
 		font-size: 20px;
 	}
+
+	.panel.active {
+		flex: 2;
+	}
+
+	.panel h3 {
+		bottom: 200px;
+	}
+
+	.panel p {
+		padding-right: 5px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -801,6 +855,14 @@ footer {
 
 	.menu {
 		font-size: 3rem;
+	}
+
+	.panel h3 {
+		bottom: 220px;
+	}
+
+	.panel.active {
+		flex: 2;
 	}
 }
 
@@ -901,6 +963,15 @@ footer {
 
 	.box > span {
 		font-size: 2vh;
+	}
+
+	.panel h3 {
+		font-size: 24px;
+		position: absolute;
+		bottom: 220px;
+		left: 20px;
+		margin: 0;
+		opacity: 0;
 	}
 }
 
