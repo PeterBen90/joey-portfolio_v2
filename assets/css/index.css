@@ -724,10 +724,11 @@ textarea {
 	border: 0;
 	outline: 0;
 	font-size: 16px;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 16px;
 	background-color: #ebecf0;
 	text-shadow: 1px 1px 0 #fff;
+	margin-bottom: 10px !important;
 }
 
 button i {
