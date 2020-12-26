@@ -619,7 +619,6 @@ span.type::after {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 70vh;
-	/* border-radius: 50px; */
 	color: white;
 	cursor: pointer;
 	flex: 0.5;
@@ -654,12 +653,15 @@ span.type::after {
 	bottom: 30px;
 	left: 20px;
 	margin: 0;
+	visibility: hidden;
 	opacity: 0;
+	transition: visibility 0.5s, opacity 0.8s ease-in-out;
+	-webkit-transition: visibility 0.5s, opacity 0.8s ease-in-out;
+	-moz-transition: visibility 0.5s, opacity 0.8s ease-in-out;
 	background: #fff !important;
 	color: #000 !important;
 	padding: 14px 22px;
 	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
-	transition: ease 0.5s;
 }
 
 .panel a:hover {
@@ -686,8 +688,11 @@ span.type::after {
 }
 
 .panel.active a {
+	visibility: visible;
 	opacity: 1;
-	transition: opacity 0.5s ease-in 0.4s;
+	transition: visibility 0.7s, opacity 1.8s ease-in-out;
+	-webkit-transition: visibility 0.7s, opacity 1.8s ease-in-out;
+	-moz-transition: visibility 0.7s, opacity 1.8s ease-in-out;
 }
 
 @keyframes bounce {
