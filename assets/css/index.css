@@ -1065,6 +1065,10 @@ footer {
 		margin-right: 0 !important;
 		margin-left: 0 !important;
 	}
+
+	.segment h3 {
+		font-size: 22px;
+	}
 }
 
 @media (max-width: 480px) {
