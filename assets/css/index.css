@@ -706,7 +706,7 @@ button {
 	font-size: 16px;
 }
 .segment h3 {
-	color: #babecc;
+	color: grey;
 	text-shadow: 1px 1px 1px #fff;
 }
 form {
@@ -797,6 +797,20 @@ button.black {
 .input-group label {
 	margin: 0;
 	flex: 1;
+}
+
+::-webkit-input-placeholder {
+	/* Edge */
+	font-weight: 600;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	font-weight: 600;
+}
+
+::placeholder {
+	font-weight: 600;
 }
 
 @keyframes bounce {
