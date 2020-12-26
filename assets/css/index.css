@@ -636,6 +636,7 @@ span.type::after {
 	left: 20px;
 	margin: 0;
 	opacity: 0;
+	font-weight: 500;
 }
 
 .panel p {
