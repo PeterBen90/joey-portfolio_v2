@@ -729,6 +729,7 @@ textarea {
 	background-color: #ebecf0;
 	text-shadow: 1px 1px 0 #fff;
 	margin-bottom: 10px !important;
+	font-weight: 500;
 }
 
 button i {
