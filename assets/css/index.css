@@ -473,6 +473,7 @@ span.type::after {
 	position: relative;
 	top: 0;
 	transition: ease 0.5s;
+	border-radius: 5px;
 }
 
 .btn2 {
@@ -484,6 +485,7 @@ span.type::after {
 	position: relative;
 	top: 0;
 	transition: ease 0.5s;
+	border-radius: 5px;
 }
 
 .btn3 {
@@ -495,6 +497,7 @@ span.type::after {
 	position: relative;
 	top: 0;
 	transition: ease 0.5s;
+	border-radius: 5px;
 }
 
 .last {
@@ -529,6 +532,7 @@ span.type::after {
 	transition: ease 0.5s;
 	margin-top: 50px;
 	padding: 20px;
+	border-radius: 5px;
 }
 
 .tiles:hover {
@@ -627,6 +631,7 @@ span.type::after {
 	position: relative;
 	transition: flex 0.7s ease-in;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
 }
 
 .panel h3 {
@@ -663,6 +668,7 @@ span.type::after {
 	color: #000 !important;
 	padding: 14px 22px;
 	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
 }
 
 .panel a:hover {
@@ -789,6 +795,7 @@ button.black {
 	display: block;
 	width: 100%;
 	color: #000;
+	border-radius: 5px;
 }
 .input-group {
 	display: flex;
