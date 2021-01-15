@@ -462,6 +462,11 @@ span.type::after {
 .more,
 .projects {
 	font-size: 16px;
+	margin-left: 10px;
+}
+
+.fa-arrow-right {
+	margin-left: 10px;
 }
 
 .btn1 {
@@ -700,6 +705,16 @@ span.type::after {
 	transition: visibility 0.7s, opacity 1.8s ease-in-out;
 	-webkit-transition: visibility 0.7s, opacity 1.8s ease-in-out;
 	-moz-transition: visibility 0.7s, opacity 1.8s ease-in-out;
+}
+
+.blurb {
+	padding-right: 10px;
+}
+
+.methods {
+	height: auto;
+	width: 100%;
+	padding: 30px;
 }
 
 /* ------------Contact Section---------------- */
@@ -1075,6 +1090,15 @@ footer {
 
 	.segment h3 {
 		font-size: 22px;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.methods {
+		padding-left: none !important;
+		padding-right: none !important;
 	}
 }
 
