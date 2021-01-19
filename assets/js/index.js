@@ -1,6 +1,10 @@
 $(".loader").delay(1000).fadeOut("slow");
 $("#overlayer").delay(1000).fadeOut("slow");
 
+jQuery(function () {
+	$(".fancybox").fancybox({});
+});
+
 document.addEventListener("DOMContentLoaded", function () {
 	var typed = new Typed(".type", {
 		strings: ["Data Scientist.", "Retail Investor.", "Problem Solver."],

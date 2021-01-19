@@ -27,7 +27,7 @@
                 <text id="Used-to-make-quantit" font-family="AvenirNext-Medium, Avenir Next" font-size="18" font-weight="400" letter-spacing="-0.1017852">
                     <tspan x="43.119315" y="163">Used to make quantitative </tspan>
                     <tspan x="25.1162076" y="188">recommendations (confidence </tspan>
-                    <tspan x="11.8554558" y="213">intervals and mean) regarding the </tspan>
+                    <tspan x="7.9103484" y="213">intervals and means) regarding the </tspan>
                     <tspan x="75.0879594" y="238">predictor features.</tspan>
                 </text>
             </g>

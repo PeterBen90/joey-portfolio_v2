@@ -91,8 +91,8 @@
 
             <div class="container">
                 <div class="row">
-                    <h3 class="sub-head center mt-5 mb-4 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="0,5s">Methods Used</h3>
-                    <div class="row">
+                    <h3 class="sub-head center mt-5 mb-4 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="0.5s">Methods Used</h3>
+                    
                         <div class="col-lg-4 col-md-6 col-sm-12 mt-5 wow fadeInUp" >
                           <img class="methods" src="/assets/images/method-one.svg" alt="image">
                         </div>
@@ -105,14 +105,161 @@
                           <img class="methods" src="/assets/images/method-three.svg" alt="image">
                         </div>
 
-                      </div>
+        
                 </div>
             </div>
-            <!-- <div class="container">
+
+            <div class="container">
+                <div class="row">
+                    <h3 class="sub-head center mt-5 mb-4 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="0.5s">Results</h3>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                      <h4 class="bold">Multiple Linear Regression to Predict Season Outcomes</h4>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                        <h5 class="sub">Model Features:</h5>
+                        <ol>
+                            <li><span class="list-bold">Shooting Percentage</span> (shootingPctg)</li>
+                            <li><span class="list-bold">Save Percentage</span> (savePctg)</li>
+                            <li><span class="list-bold">Shots Per Game</span> (failedShotsPerGame)</li>
+                            <li><span class="list-bold">Percentage of Games Won when Team Scores First</span> (winScoreFirstGreater61_low)</li>
+                            <li><span class="list-bold">Save Per Game</span> (savesPerGame)</li>
+                        </ol>
+                        <h5 class="mt-5 sub">Model Target:</h5>
+                        <ol>
+                            <li><span class="list-bold">Above the Mean Adjusted Wins</span> (aboveMeanAdjWins)</li>
+                        </ol>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h5 class="mt-3 sub">Model Results on Test Data:</h5>
+                        <a class="fancybox" data-fancybox="images" href="/assets/images/results-img.png"><img class="img" src="/assets/images/results-img.png" alt="image"></a>
+                        <ul>
+                            <li><span class="list-bold">r2:</span> 0.90</li>
+                            <li><span class="list-bold">Mean Absolute Error:</span> 1.79</li>
+                            <li><span class="list-bold">Mean Squared Error:</span> 5.32</li>
+                            <li><span class="list-bold">Root Mean Squared Error:</span> 2.31</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+
+                  <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                      <h5 class="sub">Model Feature Coefficients:</h5>
+                      <ol>
+                          <li><span class="list-bold">Shooting Percentage</span> (shootingPctg): 3.99</li>
+                          <li><span class="list-bold">Save Percentage</span> (savePctg): 3.92</li>
+                          <li><span class="list-bold">Shots Per Game</span> (failedShotsPerGame): 1.36</li>
+                          <li><span class="list-bold">Percentage of Games Won when Team Scores First</span> (winScoreFirstGreater61_low): -1.74</li>
+                          <li><span class="list-bold">Save Per Game</span> (savesPerGame): -1.40</li>
+                      </ol>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                      <h5 class="mt-5 sub">Model Feature Importance:</h5>
+                      <a class="fancybox" data-fancybox="images"  href="/assets/images/Feature_Importance.png"><img class="img" src="/assets/images/Feature_Importance.png" alt="image"></a>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 divide">
+                    <h4 class="bold">Logistic Regression Using Predicted Season Outcomes to Predict Playoff Outcomes</h4>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                      <h5 class="sub">Model Features:</h5>
+                      <ol>
+                          <li><span class="list-bold">Predicted Above the Mean Adjusted Wins</span> (predAboveMeanAdjWins)</li>
+                      </ol>
+                      <h5 class="mt-5 sub">Model Target:</h5>
+                      <ol>
+                          <li><span class="list-bold">Above the Mean Adjusted Wins</span> (aboveMeanAdjWins)</li>
+                      </ol>
+
+                      <a class="fancybox" data-fancybox="images" href="/assets/images/ROC_AUC.png"><img class="img" src="/assets/images/ROC_AUC.png" alt="image"></a>
+                      <ul>
+                          <li><span class="list-bold">Concordance:</span> 0.94</li>
+                          <li><span class="list-bold">AUC:</span> 0.94</li>
+                      </ul>
+
+                      <a class="fancybox" data-fancybox="images" href="/assets/images/CAP_LIFT.png"><img class="img mt-5" src="/assets/images/CAP_LIFT.png" alt="image"></a>
+                      <ul>
+                          <li><span class="list-bold">Accuracy:</span> 0.86</li>
+                          <li><span class="list-bold">Percision:</span> 0.91</li>
+                          <li><span class="list-bold">Recall:</span> 0.87</li>
+                          <li><span class="list-bold">F1:</span> 0.89</li>
+                          <li><span class="list-bold">Kolmogorov–Smirnov Measure (KS):</span> 43% at the 4th decile, 1.1 time greater than a random model</li>
+                      </ul>
+                  </div>
+        
+              </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 divide">
+                <h4 class="bold">A/B Testing on Predictor Features</h4>
+                <p>If teams want to make the playoffs they need to increase their aboveMeanAdjWins. To increase their aboveMeanAdjWins, teams should take into consideration the following:
+                </p>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                  <p><span class="list-bold">Note - </span>all p-values are significant as <span class="list-bold">p &#60; 0.05.</span></p>
+
+                  <ol>
+                    <li><span class="list-bold">shootingPctg</span> strive to achieve <span class="list-bold">10.84% </span> shooting percentage and stay within range <span class="list-bold">10.3%, 10.48%, 10.67%.</span></li>
+                    <li><span class="list-bold">savePctg</span> strive to achieve <span class="list-bold">90.21% </span> save percentage and stay within range <span class="list-bold">90.02%, 90.21%, 90.4%.</span></li>
+                    <li><span class="list-bold">savesPerGame</span> strive to achieve <span class="list-bold">26.12 </span> saves per game and stay within range <span class="list-bold">25.82, 26.12, 26.42.</span></li>
+                    <li><span class="list-bold">failedShotsPerGame</span> strive to achieve <span class="list-bold">27.17 </span> shots per game and stay within range <span class="list-bold">26.91, 27.17, 27.43.</span></li>
+                    <li><span class="list-bold">winScoreFirstGreater61_low</span> strive to win <span class="list-bold">82% </span> of games they score first and stay within range <span class="list-bold">75%, 82%, 88%.</span></li>
+                    <li><span class="list-bold">aboveMeanAdjWins</span> strive to achieve <span class="list-bold">4.3 </span> shots per game and stay within range <span class="list-bold">73.62, 4.3, 4.98.</span></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+                <h3 class="sub-head center mt-5 mb-4 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="0.5s">Technologies</h3>
+            </div>
+          </div>
+
+          <div class="container divide-two">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" >
+                <img class="tiles" src="/assets/images/python-tile.svg" alt="image">
+              </div>
+  
+              <div class="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" data-wow-delay="0.1s">
+                <img class="tiles" src="/assets/images/r-tile.svg" alt="image">
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" data-wow-delay="0.2s">
+                <img class="tiles" src="/assets/images/jupyter-tile.svg" alt="image">
+              </div>
+  
+              <div class="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" data-wow-delay="0.3s">
+                <img class="tiles" src="/assets/images/anaconda-tile.svg" alt="image">
+              </div>
+            </div>
+          </div>
+
+            <div class="container">
                 <div class="row project-btn">
                   <a href="projects2.html" class="btn3"><i class="fas fa-arrow-left"></i><span class="projects">Back to Projects</span></a>
                 </div>
-              </div> -->
+            </div>
         </section>
 
     
@@ -140,10 +287,10 @@
     <script src="/assets/js/typed.min.js"></script>
     <script src="/assets/js/jquery-ui.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
-	  <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/jquery.fancybox.min.js"></script> 
+	<script src="/assets/js/wow.min.js"></script>
     <script src="/assets/js/aos.js"></script> 
     <script src="/assets/js/parallax.min.js"></script>
-    <script src="/assets/js/jquery.fancybox.min.js"></script> 
     <script src="/assets/js/all.min.js"></script> 
 
     <script type="text/javascript" src="/assets/js/about.js"></script>

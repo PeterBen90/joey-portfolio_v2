@@ -717,6 +717,40 @@ span.type::after {
 	padding: 30px;
 }
 
+.bold {
+	font-weight: 600;
+}
+
+.list-bold {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.img {
+	height: auto;
+	width: 100%;
+}
+
+.fancybox-button:hover {
+	box-shadow: none !important;
+}
+
+li {
+	margin-top: 10px;
+}
+
+.sub {
+	text-decoration: underline;
+}
+
+.divide {
+	margin-top: 100px;
+}
+
+.divide-two {
+	margin-bottom: 100px;
+}
+
 /* ------------Contact Section---------------- */
 
 input,
