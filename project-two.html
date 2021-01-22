@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joey Benvenuto</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/index.css" />
+	  <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+	  <link rel="stylesheet" href="/assets/css/animate.min.css" />
+	  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/aos.css" />
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css">
+    <link href="/assets/css/all.min.css">
+</head>
+<body>
+
+    <div id="overlayer"></div>
+		<div class="loader">
+		  <div class="spinner-grow" role="status">
+		    <span class="sr-only">Loading...</span>
+		</div>
+	</div>
+
+    <div class="site-wrap">
+
+        <header>
+            <a href="#" class="hamburger-button2">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>	
+            
+            <div class="overlay">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                              <span>Home</span>
+                              <span>
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                          </li>
+                        <li>
+                            <a href="about.html">
+                              <span>About</span>
+                              <span>
+                                <i class="fas fa-address-card" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="projects2.html">
+                              <span>Projects</span>
+                              <span>
+                                <i class="fas fa-tasks" aria-hidden="true"></i>    
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="contact.html">
+                              <span>Contact</span>
+                              <span>
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>    
+                              </span>
+                            </a>
+                          </li>
+                    
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="projects-section" class="project">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section-title wow fadeInLeft col-lg-12 col-md-12" data-wow-delay="0.5s" data-wow-duration="1s">Company Cluster Analysis</h1>
+                    <h3 class="sub-head mt-5 mb-4 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="1s">Project Overview</h3>
+                    <p class="body-text2 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="1s">1,613 companies were clustered using 20 years of balance sheet and income statement data collected from the EDGAR API (<a href="https://developer.edgar-online.com/" target="_blank">developer.edgar-online.com</a>).</br></br>
+                    The K-Modes clustering algorithm was used to cluster all publicly traded companies in America (excluding delisted companies, companies lacking data, and companies with extreme outliers) based on three financial ratios. The clustering by the three ratios allowed for alike companies to be clustered and analyze future returns per cluster.</br></br>
+                    K-Modes was used because it separated the data best regarding specific thresholds.</br></br>
+                    The analysis sought to prove whether the three financial ratios can quantitatively filter for valuable investments that provided satisfactory returns over time.</br></br>
+                    </p>
+                    <h5 class="body-text2 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="1s">
+                        The three financial ratios:
+                    </h5>
+                    <ul>
+                        <li><span class="list-bold">EBIT (Earnings Before Intrest & Taxes)/Market Cap: </span>Determines if the stock is cheap when comparing the price to shareholder earnings. Preferably 7% at minimum to cover the inevitable loss on inflation and the average risk-free government rate. Anything above 7% may indicate the company is selling at a cheap price and returning a high earnings yield. This has to be taken into consideration with other financial valuations (qualitative and quantitative) to avoid investing in a deeply troubled company.</li>
+                        <li><span class="list-bold">EBIT/Tangible Assets: </span>Determines the earnings power of a company's tangible assets. This can allow for future returns to the shareholders and/or if the company can expand future compounding wealth by retained earnings. This will allow for efficient capital allocation. Preferably the threshold is 7% at a minimum to cover the inevitable loss on inflation and the average risk-free government rate.</li>
+                        <li><span class="list-bold">Total Debt/Tangible Assets: </span>Determines how leveraged an underlying company is. This gives the investor a gauge of the company's staying power and ability to make it through unfavorable economic periods and events. Preferably the threshold is 50% at maximum.</li>
+                    </ul>
+                    <p class="body-text2 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="1s"><span class="list-bold">Note -</span> all ratios were calculated using the data from the year 2000 to simulate an investor analyzing companies for future returns from that starting point.</br>
+                    The analysis can be taken advantage of by any individual or entity looking to filter for valuable investments for capital allocation opportunity.</br></br>
+                    </p>
+                </div>                
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <h3 class="sub-head center mt-5 mb-4 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="0.5s">Methods Used</h3>
+                    
+                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 wow fadeInUp" >
+                          <img class="methods" src="/assets/images/method-one.svg" alt="image">
+                        </div>
+            
+                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5  wow fadeInUp" data-wow-delay="0.1s">
+                          <img class="methods" src="/assets/images/method-four.svg" alt="image">
+                        </div>
+            
+                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5  wow fadeInUp" data-wow-delay="0.2s">
+                          <img class="methods" src="/assets/images/method-five.svg" alt="image">
+                        </div>
+
+        
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <h3 class="sub-head mt-5 mb-4 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="0.5s">Results</h3>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                      <h4 class="bold">Cluster Outcomes:</h4>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h5 class="mt-3 sub">PCA:</h5>
+                        <a class="fancybox" data-fancybox="images" href="/assets/images/PCA.png"><img class="img" src="/assets/images/PCA.png" alt="image"></a>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h5 class="mt-3 sub">Cluster Frequency:</h5>
+                        <a class="fancybox" data-fancybox="images" href="/assets/images/Cluster_Freq.png"><img class="img" src="/assets/images/Cluster_Freq.png" alt="image"></a>
+                        <ul>
+                            <li>10 clusters were generated</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container divide">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h5 class="mt-3 sub">Cluster Comparison:</h5>
+                        <a class="fancybox" data-fancybox="images" href="/assets/images/Cluster_Comparison.png"><img class="img" src="/assets/images/Cluster_Comparison.png" alt="image"></a>
+                        <ul>
+                            <li>The top clusters that fit the threshold requirements best returned the higher compounded returns basis cap weighted capital gains (clusters 1 and 7).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container divide">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <a class="fancybox" data-fancybox="images" href="/assets/images/Index1.png"><img class="img" src="/assets/images/Index1.png" alt="image"></a>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <a class="fancybox" data-fancybox="images" href="/assets/images/Index2.png"><img class="img" src="/assets/images/Index2.png" alt="image"></a>
+                        <ul>
+                            <li>Clusters 1 and 7 were grouped and called Value Index for comparison purposes.</li>
+                            <li>The Value Index outperformed the S&P 500 Index and the Wilshire 5000 Index in all three financial ratios, and in doing so out performed them in capital growth over 20 years.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container divide">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                      <h4 class="bold"></h4>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h5 class="mt-3">Portfolio in year 2000:</h5>
+                        <a class="fancybox" data-fancybox="images" href="/assets/images/Portfolio.png"><img class="img" src="/assets/images/Portfolio.png" alt="image"></a>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h5 class="mt-5">Portfolio in year 2019:</h5>
+                        <a class="fancybox" data-fancybox="images" href="/assets/images/Portfolio2.png"><img class="img" src="/assets/images/Portfolio2.png" alt="image"></a>
+                        <ul class="mt-5">
+                            <li>By this analysis, it seems as if the three ratio combination has proven to be ideal when filtering through large quantities of stocks for invaluable investment opportunities with a longer holding period.</li>
+                            <li>To improve the results, the analyst should take into consideration qualitative advantages for the various companies in the Value Index.</li>
+                        </ul>
+                        <p class="mt-5"><span class="list-bold">Note -</span> The same companies in the value Index may not be suitable for stock picking into today's current environment due to the analysis takes into consideration purchase price and the companies economics may have deteriorated. The Analyst should run the algorithm again and revalue the companies.</p>
+                    </div>
+
+                </div>
+            </div>
+
+          <div class="container">
+            <div class="row">
+                <h3 class="sub-head center mt-5 mb-4 col-lg-12 col-md-12 wow fadeIn" data-wow-duration="1.5" data-wow-delay="0.5s">Technologies</h3>
+            </div>
+          </div>
+
+          <div class="container divide-two">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" >
+                <img class="tiles" src="/assets/images/python-tile.svg" alt="image">
+              </div>
+  
+              <div class="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" data-wow-delay="0.1s">
+                <img class="tiles" src="/assets/images/r-tile.svg" alt="image">
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" data-wow-delay="0.2s">
+                <img class="tiles" src="/assets/images/rstudio-tile.svg" alt="image">
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" data-wow-delay="0.3s">
+                <img class="tiles" src="/assets/images/jupyter-tile.svg" alt="image">
+              </div>
+  
+              <div class="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" data-wow-delay="0.4s">
+                <img class="tiles" src="/assets/images/anaconda-tile.svg" alt="image">
+              </div>
+            </div>
+          </div>
+
+            <div class="container">
+                <div class="row project-btn">
+                  <a href="projects2.html" class="btn3"><i class="fas fa-arrow-left"></i><span class="projects">Back to Projects</span></a>
+                </div>
+            </div>
+        </section>
+
+    
+
+        <footer id="footer-section" class="footer border-top">
+          
+          <a class="text-btn foot" href="mailto:joseppbenvenuto@gmail.com" target="_top">joseppbenvenuto@gmail.com</a>
+            <div class="wrap border-bottom">
+              <a href="https://www.linkedin.com/in/joseppbenvenuto/" target="_blank" class="hover-fx"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/joseppbenvenuto/" target="_blank" class="hover-fx"><i class="fab fa-github-alt"></i></a>
+              <a href="mailto:joseppbenvenuto@gmail.com" target="_top" class="hover-fx"><i class="fas fa-envelope"></i></a>
+            </div>
+  
+            <div class="copyright">
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by <a href="https://www.peterbenvenuto.com/" target="_blank" class="text-btn2">Peter Benvenuto Design</a>.
+            </div>
+            
+        </footer>
+        
+
+    </div>
+    
+
+    <script src="/assets/js/jquery-1.12.4.min.js"></script>
+    <script src="/assets/js/typed.min.js"></script>
+    <script src="/assets/js/jquery-ui.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.fancybox.min.js"></script> 
+	<script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/aos.js"></script> 
+    <script src="/assets/js/parallax.min.js"></script>
+    <script src="/assets/js/all.min.js"></script> 
+
+    <script type="text/javascript" src="/assets/js/about.js"></script>
+		<script>
+			new WOW().init();
+        </script>  
+</body>
+</html>
