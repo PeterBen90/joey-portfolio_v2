@@ -1134,6 +1134,14 @@ footer {
 		padding-left: none !important;
 		padding-right: none !important;
 	}
+
+	.smaller {
+		font-size: 35px;
+	}
+
+	.sub-head {
+		font-size: 32px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -1146,6 +1154,7 @@ footer {
 		height: 50vh;
 		margin-bottom: 30px;
 	}
+
 	/* .panel:nth-of-type(4),
 	.panel:nth-of-type(5) {
 		display: none;
