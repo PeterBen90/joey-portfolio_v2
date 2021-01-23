@@ -761,6 +761,14 @@ li {
 	font-size: 1.2rem !important;
 }
 
+.email {
+	color: #000;
+}
+
+.email:hover {
+	text-decoration: none;
+}
+
 /* ------------Contact Section---------------- */
 
 input,
