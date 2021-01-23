@@ -722,7 +722,7 @@ span.type::after {
 }
 
 .list-bold {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 }
 
@@ -754,6 +754,11 @@ li {
 .dash {
 	margin-top: 80px;
 	margin-bottom: 50px;
+}
+
+p,
+li {
+	font-size: 1.2rem !important;
 }
 
 /* ------------Contact Section---------------- */
