@@ -1160,6 +1160,10 @@ footer {
 	.sub-head {
 		font-size: 32px;
 	}
+
+	.panel.active p {
+		font-size: 16px !important;
+	}
 }
 
 @media (max-width: 480px) {
