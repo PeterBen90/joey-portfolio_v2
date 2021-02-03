@@ -1,13 +1,13 @@
-$(".loader").delay(1000).fadeOut("slow");
-$("#overlayer").delay(1000).fadeOut("slow");
+$('.loader').delay(1000).fadeOut('slow');
+$('#overlayer').delay(1000).fadeOut('slow');
 
 jQuery(function () {
-	$(".fancybox").fancybox({});
+	$('.fancybox').fancybox({});
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-	var typed = new Typed(".type", {
-		strings: ["Data Scientist.", "Retail Investor.", "Problem Solver."],
+document.addEventListener('DOMContentLoaded', function () {
+	var typed = new Typed('.type', {
+		strings: ['Data Analyst.', 'Retail Investor.', 'Problem Solver.'],
 		stringsElement: null,
 		// typing speed
 		typeSpeed: 60,
@@ -24,19 +24,19 @@ document.addEventListener("DOMContentLoaded", function () {
 		// show cursor
 		showCursor: false,
 		// character for cursor
-		cursorChar: "|",
+		cursorChar: '|',
 		// attribute to type (null == text)
 		attr: null,
 		// either html or text
-		contentType: "html",
+		contentType: 'html',
 	});
 });
 
-const hamburgerButton = document.querySelector(".hamburger-button");
-const overlay = document.querySelector(".overlay");
+const hamburgerButton = document.querySelector('.hamburger-button');
+const overlay = document.querySelector('.overlay');
 
-hamburgerButton.addEventListener("click", (e) => {
+hamburgerButton.addEventListener('click', (e) => {
 	e.preventDefault();
-	hamburgerButton.classList.toggle("active");
-	overlay.classList.toggle("visible");
+	hamburgerButton.classList.toggle('active');
+	overlay.classList.toggle('visible');
 });

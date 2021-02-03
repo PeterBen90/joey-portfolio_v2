@@ -83,8 +83,8 @@
                     The season outcomes calculated in the way mentioned above will help predict and understand playoff outcomes more efficiently.</br></br>
                     More than 60% of teams make the playoffs, so the analysis set out to predict teams that did not make the playoffs.</br></br>
                     The entirety of the analysis sought to understand the statistical economics of what NHL team organizations can focus on to reach the post-season.</br></br>
-                    By understanding the economics of what hold teams back from making playoffs, teams can gain more transparency and perspective on what does work with strategy and achieving successful campaigns in mind.</br></br>
-                    Achieving successful campaigns can potentially lead to increased revenue for all stakeholders through ticket sales, salary increases, endorsement deals, fair book value of the organization, greater economic activity for the represented city, etc...
+                    By understanding the economics of what hold teams back from making playoffs, teams can gain more transparency and perspective on what works with strategy and achieving successful campaigns in mind.</br></br>
+                    Achieving successful campaigns can potentially lead to increased revenue for all stakeholders through ticket sales, salary increases, endorsement deals, fair book value of the organization, greater economic activity for the represented city, etc.
                     </p>
                 </div>                
             </div>
@@ -178,7 +178,7 @@
                     <h4 class="bold">Logistic Regression Using Predicted Season Outcomes to Predict Playoff Outcomes</h4>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
-                      <h5 class="sub">Model Features:</h5>
+                      <h5 class="sub">Model Feature:</h5>
                       <ol>
                           <li><span class="list-bold">Predicted Above the Mean Adjusted Wins</span> (predAboveMeanAdjWins)</li>
                       </ol>
@@ -187,6 +187,7 @@
                           <li><span class="list-bold">Above the Mean Adjusted Wins</span> (aboveMeanAdjWins)</li>
                       </ol>
 
+                      <h5 class="sub mt-5">Model Results on Test Data:</h5>
                       <a class="fancybox" data-fancybox="images" href="/assets/images/ROC_AUC.png"><img class="img" src="/assets/images/ROC_AUC.png" alt="image"></a>
                       <ul>
                           <li><span class="list-bold">Concordance:</span> 0.94</li>
@@ -196,10 +197,10 @@
                       <a class="fancybox" data-fancybox="images" href="/assets/images/CAP_LIFT.png"><img class="img mt-5" src="/assets/images/CAP_LIFT.png" alt="image"></a>
                       <ul>
                           <li><span class="list-bold">Accuracy:</span> 0.86</li>
-                          <li><span class="list-bold">Percision:</span> 0.91</li>
-                          <li><span class="list-bold">Recall:</span> 0.87</li>
+                          <li><span class="list-bold">Percision:</span> 0.94</li>
+                          <li><span class="list-bold">Recall:</span> 0.85</li>
                           <li><span class="list-bold">F1:</span> 0.89</li>
-                          <li><span class="list-bold">Kolmogorov–Smirnov Measure (KS):</span> 43% at the 4th decile, 1.1 time greater than a random model</li>
+                          <li><span class="list-bold">Kolmogorov–Smirnov Measure (KS):</span> 44% at the 4th decile, a cumulative percentage 2.1 times (84% (model) - 40% (random model)) greater than a random model.</li>
                       </ul>
                   </div>
         
@@ -223,7 +224,7 @@
                     <li><span class="list-bold">savesPerGame</span> strive to achieve <span class="list-bold">26.12 </span> saves per game and stay within range <span class="list-bold">25.82, 26.12, 26.42.</span></li>
                     <li><span class="list-bold">failedShotsPerGame</span> strive to achieve <span class="list-bold">27.17 </span> shots per game and stay within range <span class="list-bold">26.91, 27.17, 27.43.</span></li>
                     <li><span class="list-bold">winScoreFirstGreater61_low</span> strive to win <span class="list-bold">82% </span> of games they score first and stay within range <span class="list-bold">75%, 82%, 88%.</span></li>
-                    <li><span class="list-bold">aboveMeanAdjWins</span> strive to achieve <span class="list-bold">4.3 </span> shots per game and stay within range <span class="list-bold">73.62, 4.3, 4.98.</span></li>
+                    <li><span class="list-bold">aboveMeanAdjWins</span> strive to achieve <span class="list-bold">4.3 </span> shots per game and stay within range <span class="list-bold">3.62, 4.3, 4.98.</span></li>
                 </ol>
               </div>
             </div>
