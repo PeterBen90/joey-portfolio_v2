@@ -17,12 +17,12 @@
                 <text id="Machine-learning" font-family="AvenirNext-Bold, Avenir Next" font-size="25" font-weight="bold" letter-spacing="-0.141368333">
                     <tspan x="42.1934467" y="136">Machine learning</tspan>
                 </text>
-                <text id="Multipl-Linear-Regre" font-family="AvenirNext-Bold, Avenir Next" font-size="18" font-weight="bold" letter-spacing="-0.1017852">
-                    <tspan x="4.631241" y="163">Multipl Linear Regression</tspan>
-                    <tspan x="224.332611" y="163" font-family="AvenirNext-Medium, Avenir Next" font-weight="400"> - Predict </tspan>
-                    <tspan x="10.9315632" y="188" font-family="AvenirNext-Medium, Avenir Next" font-weight="400">season outcomes (adjusted wins a </tspan>
-                    <tspan x="12.5093484" y="213" font-family="AvenirNext-Medium, Avenir Next" font-weight="400">team won (wins + (ties / 2)) above </tspan>
-                    <tspan x="48.1984224" y="238" font-family="AvenirNext-Medium, Avenir Next" font-weight="400">the mean adjusted wins).</tspan>
+                <text id="Multiple-Linear-Regr" font-family="AvenirNext-Bold, Avenir Next" font-size="18" font-weight="bold" letter-spacing="-0.1017852">
+                    <tspan x="29.8079928" y="163">Multiple Linear Regression</tspan>
+                    <tspan x="260.135578" y="163" font-family="AvenirNext-Medium, Avenir Next" font-weight="400"> - </tspan>
+                    <tspan x="7.9854558" y="188" font-family="AvenirNext-Medium, Avenir Next" font-weight="400">Predict season outcomes (adjusted </tspan>
+                    <tspan x="12.695241" y="213" font-family="AvenirNext-Medium, Avenir Next" font-weight="400">wins a team won (wins + (ties / 2)) </tspan>
+                    <tspan x="20.468778" y="238" font-family="AvenirNext-Medium, Avenir Next" font-weight="400">above the mean adjusted wins).</tspan>
                     <tspan x="150" y="263" font-family="AvenirNext-Medium, Avenir Next" font-weight="400"></tspan>
                     <tspan x="38.4812076" y="288">Logistic Regression</tspan>
                     <tspan x="204.919289" y="288" font-family="AvenirNext-Medium, Avenir Next" font-weight="400"> - Used </tspan>
